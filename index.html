@@ -7,7 +7,9 @@
 	<script type="text/javascript">
 		bgColors = ["#1B495B", "#8C959C", "#B5C8C6", "#696A6E", "#57565B", "#925C4F", "#A5806A", "#FCD79E", "#F9B17B","#F6BFC7","#F077A0", "#8061AF", "#858AC7", "#C89FCC", "#3EA96B", "#0A6A4B", "#63A870", "#7DCAB5"];
 
+
  
+
 
 		$(window).on('load', loaded).on('resize', resize);
 
@@ -17,24 +19,24 @@
 			resize();
 		}
 
-		// function resize()
-		// {
-		// 	let w = $(window).width();
-		// 	let h = $(window).height();
-		// 	if (w<680)
-		// 	{
-		// 		$('#logo').addClass("resized");
-		// 		$('#logo img').width( w );
-		// 	}
-		// 	else
-		// 	{
-		// 		$('#logo img').width( 680 );
-		// 		$('#logo').removeClass("resized");
-		// 	}
-    //
-		// 	$('#logo').offset({left : (w-$('#logo').width())/2, top : (h-$('#logo').height())/2})
-		// 	$('#grid').offset({top:$('#logo').offset().top})
-		// }
+		function resize()
+		{
+			let w = $(window).width();
+			let h = $(window).height();
+			if (w<852)
+			{
+				$('#logo').addClass("resized");
+				$('#logo img').width( w );
+			}
+			else
+			{
+				$('#logo img').width( 852 );
+				$('#logo').removeClass("resized");
+			}
+
+			$('#logo').offset({left : (w-$('#logo').width())/2, top : (h-$('#logo').height())/2})
+			$('#grid').offset({top:$('#logo').offset().top})
+		}
 
 		function logoOver(e)
 		{
