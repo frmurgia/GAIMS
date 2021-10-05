@@ -11,6 +11,11 @@
 
 
 
+				$(document).ready( function()
+				{
+					$("body").css("background-color", bgColors[ parseInt( Math.random()*bgColors.length )] );
+				});
+
 		$(window).on('load', loaded).on('resize', resize);
 a
 		function loaded()
@@ -55,8 +60,9 @@ a
 		{
 			if ($('#logo').hasClass("resized"))
 				return;
-			$('#grid').offset( {left: e.pageX - $('#grid img').width()/2 } );
+			$('#grid').offset( {left: e.pageX - $('#grid img').width()/4 } );
 		}
+
 
 	</script>
 	</head>

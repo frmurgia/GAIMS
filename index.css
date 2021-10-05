@@ -18,6 +18,9 @@
 
 #grid
 {
-	pointer-events:	none;	
+	pointer-events:	none;
 }
 
+background-color{ 
+color:"#1B495B"
+}
