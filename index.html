@@ -12,7 +12,7 @@
 
 
 		$(window).on('load', loaded).on('resize', resize);
-
+a
 		function loaded()
 		{
 			$('#logo').fadeIn("slow").on('mouseover', logoOver).on('mouseout', logoOut).on('mousemove', logoMove);
@@ -23,14 +23,14 @@
 		{
 			let w = $(window).width();
 			let h = $(window).height();
-			if (w<852)
+			if (w<1305)
 			{
 				$('#logo').addClass("resized");
 				$('#logo img').width( w );
 			}
 			else
 			{
-				$('#logo img').width( 852 );
+				$('#logo img').width( 1305 );
 				$('#logo').removeClass("resized");
 			}
 
